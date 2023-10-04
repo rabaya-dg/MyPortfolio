@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'DMSans';
+    src: url('/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kroana One';
+    src: url('/assets/fonts/Krona_One/KronaOne-Regular.ttf') format('truetype');
+}
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-zoom: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Kroana One';
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #181818;
+    --light: #efefef;
+    --hover-dark: #282828;
+    --hover-light: #f5f5f5;
+    --border-light: #eeeeee;
+    --border-dark: #222222; 
+    --primary: #151515;
+    --gray: #aaa;
+    --text: #222222;
+
+    --radius: 50px;
+    --border: 1px solid var(--border-light);
+
+}
+
+
+
+.btn {
+    width: 100%;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+
+    &:hover {
+        background-color: var(--hover-dark);
+    }
+}
+
+.active {
+    color: var(--primary) !important;
+}
