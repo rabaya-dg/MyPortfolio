@@ -35,7 +35,7 @@ body {
     --light: #efefef;
     --hover-dark: #282828;
     --hover-light: #f5f5f5;
-    --border-light: #eeeeee;
+    --border-light: #eee;
     --border-dark: #222222; 
     --primary: #151515;
     --gray: #aaa;
@@ -67,4 +67,8 @@ body {
 
 .active {
     color: var(--primary) !important;
+}
+
+.section-header {
+    font-size: 50px;
 }
