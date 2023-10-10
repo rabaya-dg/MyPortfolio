@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./assets/favicon.svg?v2" type="image/x-icon">
     <link rel="stylesheet" href="./assets/icons/tabler-icons-2.34.0/webfont/tabler-icons.css">
     <link rel="stylesheet" href="./style/css/app.css?v2">
+    <link rel="stylesheet" href="./style/css/media-query.css?v2">
     <title>DG.</title>
 </head>
 <body>
@@ -18,12 +19,19 @@
                 <a href="/" id="link-home">
                     <img src="./assets/logo.svg" alt="branding-logo" class="branding-logo">
                 </a>
-                <ul class="navbar-link-list">
-                    <li class="navbar-link-list-li"><a href="" class="navbar-link active">01. Overview</a></li>
-                    <li class="navbar-link-list-li"><a href="#projects-page-view" class="navbar-link">02. Projects</a></li>
-                    <li class="navbar-link-list-li"><a href="#about-page-view" class="navbar-link">03. About</a></li>
-                    <li class="navbar-link-list-li"><a href="#" class="navbar-link">04. Contact</a></li>
-                </ul>
+                    <button type="button" id="menu">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <ul class="navbar-link-list">
+                        <li class="navbar-link-list-li"><a href="#" class="navbar-link active">01. Overview</a></li>
+                        <li class="navbar-link-list-li"><a href="#projects-page-view" class="navbar-link">02. Projects</a></li>
+                        <li class="navbar-link-list-li"><a href="#about-page-view" class="navbar-link">03. About</a></li>
+                        <li class="navbar-link-list-li"><a href="#contact-page-view" class="navbar-link">04. Contact</a></li>
+                    </ul>
             </div>
         </nav>
 
@@ -35,7 +43,7 @@
             <!-- 
                 Section Landing Page
              -->
-            <section class="container" id="landing-page-view">
+            <section id="landing-page-view" class="container">
                 <div id="landing-page-view-inner">
                     <div id="lpv-left-side">
                         <span id="hello">Hello, I'm</span>
@@ -44,7 +52,7 @@
                             Rabaya, Dann Gil
                         </span>
                         <p id="lpv-description">
-                            A driven information technology student focused on becoming a software engineer and 
+                            a driven information technology student focused on becoming a software engineer and 
         cybersecurity professional with a passion for developing robust software and safeguarding data. <i class="ti ti-circle-arrow-up-right-filled"></i>
                         </p>
                         <a href="mailto:developer.rabaya.dg@gmail.com" class="lpv-links" target="_blank">
@@ -57,24 +65,10 @@
                         <a href="#" class="btn btn-primary" id="view-portfolio">
                             Download Curriculum Vitae
                         </a>
-
-                        <ul id="lpv-list">
-                            <li class="lpv-li"><a href="https://web.facebook.com/itscodewithdann" target="_blank"><i class="ti ti-brand-facebook"></i></a></li>
-                            <li class="lpv-li"><a href="https://www.threads.net/@its_codewithdg" target="_blank"><i class="ti ti-brand-threads"></i></a></li>
-                            <li class="lpv-li"><a href="https://www.instagram.com/its_codewithdg" target="_blank">
-                                <i class="ti ti-brand-instagram"></i>
-                            </a></li>
-                            <li class="lpv-li"><a href="https://github.com/rabaya-dg" target="_blank">
-                                <i class="ti ti-brand-github"></i>
-                            </a></li>
-                        </ul>
                     </div>
-                    <div id="lpv-right-side">
-                        <img src="./assets/tech.svg" alt="tech" id="techs">
+                    <div id="lpv-bottom">
+                        <a href="#projects-page-view" id="scroll-down">scroll down</a>
                     </div>
-                </div>
-                <div id="lpv-bottom">
-                    <a href="#projects-page-view" id="scroll-down">scroll down</a>
                 </div>
             </section>
             
@@ -128,10 +122,10 @@
              -->
             <section class="container" id="about-page-view">
                 <p class="about-text">
-                    A self-taught IT enthusiast passionate about web and Android development as well as cybersecurity. Eager to continuously expand knowledge and stay updated on the latest advancements in these fields.
+                    A self-taught IT enthusiast <span>passionate</span> about web and Android <span>development</span> as well as cybersecurity. Eager to continuously expand knowledge and stay updated on the latest advancements in these fields.
                 </p>
                 <p class="about-text">
-                    Driven by a love for technology and desire to build useful applications and security systems. Focused on applying skills to develop innovative solutions and protect data.<i class="ti ti-circle-arrow-up-right-filled"></i> 
+                    Driven by a love for technology and desire to build useful applications and security systems. Focused on applying skills to <span>develop innovative solutions</span> and protect data.<i class="ti ti-circle-arrow-up-right-filled"></i> 
                 </p>
             </section>
 
@@ -142,7 +136,7 @@
             <section class="container" id="contact-page-view">
                 <div id="contact-row">
                     <div>
-                        <span id="lwt">Let's work together <i class="ti ti-circle-arrow-up-right-filled"></i> </span>
+                        <span id="lwt">Let's work together <i class="ti ti-circle-arrow-down-right-filled"></i> </span>
     
                         <div id="contact-details">
                             <a href="tel:+639054709764">+ 63 (905)-470-9764</a>
@@ -183,6 +177,28 @@
                     </form>
                 </div>
             </section>
+
+
+
+            <!-- footer -->
+            <footer>
+                <div id="footer-inner">
+                    <img src="./assets/logo.svg" alt="logo" class="logo">
+                    <p>
+                        &copy; 2023 <NAME>. All rights reserved.
+                    </p>
+                    <ul id="lpv-list">
+                        <li class="lpv-li"><a href="https://web.facebook.com/itscodewithdann" target="_blank"><i class="ti ti-brand-facebook"></i></a></li>
+                        <li class="lpv-li"><a href="https://www.threads.net/@its_codewithdg" target="_blank"><i class="ti ti-brand-threads"></i></a></li>
+                        <li class="lpv-li"><a href="https://www.instagram.com/its_codewithdg" target="_blank">
+                            <i class="ti ti-brand-instagram"></i>
+                        </a></li>
+                        <li class="lpv-li"><a href="https://github.com/rabaya-dg" target="_blank">
+                            <i class="ti ti-brand-github"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
